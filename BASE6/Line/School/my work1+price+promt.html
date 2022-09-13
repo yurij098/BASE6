@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <script>
+
+        let x = parseFloat(prompt("Введіть ширину поля"));
+        let y = parseFloat(prompt("Введіть довжину поля"));
+
+        let perymetr = x + y + x + y;
+        alert("периметр: " + perymetr);
+
+        let pl = x * y;
+        alert("площа : " + pl + ' м2');
+
+        // Купуємо
+
+        let price = parseFloat(prompt("Продавець, кілько стоїть метер сітки?"));
+        let summa = price * perymetr;
+        alert("сума для доту: " + summa);
+
+        let price2 = parseFloat(prompt("Продавець, кілько стоїть пшениця на метер квадратний?"));;
+        // 30*3
+        let summa2 = pl * price2;
+        alert("сума для пшениці: " + summa2);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
