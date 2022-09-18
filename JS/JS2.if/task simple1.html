@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS2.If.Task Simple 1</title>
+    <script>
+        let side = null //undefined
+        while (side != 0) {
+            side = parseInt(prompt(`(Введіть кількість сторін багатокутника. або 0 для виходу)`));
+            if (side == 0) break
+
+            if (side == 3) {
+                alert("дана фігура 'Трикутник' ");
+            }
+            else if (side == 4) {
+                alert("дана фігура 'Чотирикутник' ")
+            }
+            else if (side == 5) {
+                alert("дана фігура 'п'ятикутник ")
+            }
+            else if (side == 6) {
+                alert("дана фігура 'шестикутник")
+            }
+            else
+                alert("дана фігура фігура не знайдена")
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+
+
+</body>
+
+</html>

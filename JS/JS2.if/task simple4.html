@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS2.If.Task Simple 4</title>
+    <script>
+
+        let letter = null //undefined
+        let poperednijResultat = ""
+
+        while (letter !== "0") {
+            letter = (prompt(`${poperednijResultat}\n(Введіть наступну літеру; або 0 для виходу)`))
+            console.log("'" + letter + "'");
+            if (letter === "0") break
+
+            // "бвгдждзклмнпрстфхцчшщь".includes(letter.toLowerCase())
+            if (['б', 'в', 'г', 'ґ', 'д', 'ж', 'дж', 'з', 'й', 'к', 'л', 'м', 'н', 'п',
+                'р', 'с', 'т', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'ь'].includes(letter.toLowerCase())) {
+                poperednijResultat = "приголосна";
+            }
+            else if ("аеиіїоуюєя".includes(letter.toLowerCase()) && letter !== "") {
+                poperednijResultat = "голосні"
+            }
+            else poperednijResultat = " Вибачте нажаль "
+        }
+    </script>
+</head>
+
+<body>
+
+
+
+
+</body>
+
+</html>
